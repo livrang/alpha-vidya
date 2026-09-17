@@ -5,7 +5,7 @@
     const article = reader.parse();
     
     if (article) {
-        console.log("Extraction successful!", article);
+        console.log("Extraction done!", article);
     
         chrome.runtime.sendMessage({
             action: "extraction_complete",
